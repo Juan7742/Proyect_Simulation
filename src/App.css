@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: Medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/poppins/Poppins-MediumItalic.ttf') format('truetype');
+    font-weight: Medium;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+.principal-container {
+    display: flex;
+}
+
+.presentation {
+    background-image: linear-gradient(to bottom, #FFFF7C, #E3B727);
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.banner-img {
+    width: 50%;
+}
+
+.presentation > p {
+    padding: 0% 10%;
+    margin: 0px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.presentation > h1{
+    font-size: 64px;
+    margin: 2% 0%;
+}
+
+.formulario-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    padding: 5%;
+    text-align: center;
+    color: black;
+}
+
+.formulario-container > h2{
+    font-size: 36px;
+    margin: 0%;
+}
+
+.formulario-container > p{
+    font-size: 20px;
+}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { peticion } from "../chat.js";
-
+import "./Formulario.css";
 
 const Formulario = () => {
 
@@ -45,67 +45,77 @@ const Formulario = () => {
       <textarea name="" id="" cols="30" rows="10" readOnly>{Respuesta}</textarea>
 
       <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="estatura">Estatura : </label>
-          <input
-            type="number"
-            step="0.01"
-            min="0.01"
-            id="estatura"
-            name="estatura"
-            value={estatura}
-            required
-            onChange={(e) => setEstatura(e.target.value)}
-          />
-        </div>
+      <div>
+        <label htmlFor="estatura">Estatura:</label>
+        {/* <label htmlFor="estatura">Estatura:</label> */}
+        <input
+          type="number"
+          step="0.01"
+          min="0.01"
+          id="estatura"
+          name="estatura"
+          placeholder="Ingresa tu estatura"
+          value={estatura}
+          required
+          onChange={(e) => setEstatura(e.target.value)}
+        />
+      </div>
 
-        <div>
-          <label htmlFor="peso">Peso : </label>
-          <input
-            type="number"
-            step="0.01"
-            min="0.01"
-            id="peso"
-            name="peso"
-            value={peso}
-            required
-            onChange={(e) => setPeso(e.target.value)}
-          />
-        </div>
+      <div>
+        <label htmlFor="peso">Peso:</label>
+        {/* <label htmlFor="peso">Peso:</label> */}
+        <input
+          type="number"
+          step="0.01"
+          min="0.01"
+          id="peso"
+          name="peso"
+          placeholder="Ingresa tu peso"
+          value={peso}
+          required
+          onChange={(e) => setPeso(e.target.value)}
+        />
+      </div>
 
-        <div>
-          <label htmlFor="edad">Edad : </label>
-          <input
-            type="number"
-            min="1"
-            id="edad"
-            name="edad"
-            value={edad}
-            required
-            onChange={(e) => setEdad(e.target.value)}
-          />
-        </div>
+      <div>
+        <label htmlFor="edad">Edad:</label>
+        {/* <label htmlFor="edad">Edad:</label> */}
+        <input
+          type="number"
+          min="1"
+          id="edad"
+          name="edad"
+          placeholder="Ingresa tu edad"
+          value={edad}
+          required
+          onChange={(e) => setEdad(e.target.value)}
+        />
+      </div>
 
-        <div>
-          <label htmlFor="enfermedad">Enfermedad : </label>
-          <select
-            id="enfermedad"
-            name="enfermedad"
-            value={enfermedad}
-            required
-            onChange={(e) => setEnfermedad(e.target.value)}
-          >
-            <option value="">Seleccione una opción</option>
-            <option value="Diabetes">Diabetes</option>
-            <option value="Hipertensión">Hipertensión</option>
-            <option value="Anemia">Anemia</option>
-            <option value="Gastritis">Gastritis</option>
-            <option value="Colesterol">Colesterol</option>
-          </select>
-        </div>
+      <div>
+        <label htmlFor="enfermedad">Enfermedad:</label>
+        {/* <label htmlFor="enfermedad">Enfermedad:</label> */}
+        <select
+          id="enfermedad"
+          name="enfermedad"
+          value={enfermedad}
+          required
+          onChange={(e) => setEnfermedad(e.target.value)}
+        >
+          <option value="">Seleccione una opción</option>
+          <option hidden selected value="">Seleccione una opción</option>
+          <option value="Diabetes">Diabetes</option>
+          <option value="Hipertensión">Hipertensión</option>
+          <option value="Anemia">Anemia</option>
+          <option value="Gastritis">Gastritis</option>
+          <option value="Colesterol">Colesterol</option>
+          <option value="No tengo">No tengo</option>
+        </select>
+      </div>
 
-        <button type="submit">Enviar</button>
-      </form>
+      <button type="submit">Enviar</button>
+      <button type="submit">COMENZAR</button>
+    </form>
     </>
   );
 };
