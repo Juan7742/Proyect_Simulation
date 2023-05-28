@@ -1,10 +1,10 @@
 import Formulario from "./components/Formulario.jsx";
 import "./App.css";
 import "./fonts.css";
-import banner from "./assets/images/banner.png";
+import banner from "./assets/images/banner.svg";
 
 function App() {
-  
+
   return (
      //amar el form y capurar los valores
      <div className="principal-container">
