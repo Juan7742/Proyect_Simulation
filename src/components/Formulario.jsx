@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { peticion } from "../chat.js";
 import "./Formulario.css";
 
@@ -8,7 +8,7 @@ const Formulario = () => {
   const [edad, setEdad] = useState("");
   const [enfermedad, setEnfermedad] = useState("");
   //texto final del promp
-  const [Respuesta, setRespuesta] = useState("");
+  const [respuesta, setRespuesta] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -41,7 +41,7 @@ const Formulario = () => {
     <>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="estatura">Estatura:</label>
+          <label htmlFor="estatura"></label>
           {/* <label htmlFor="estatura">Estatura:</label> */}
           <input
             type="number"
@@ -57,7 +57,7 @@ const Formulario = () => {
         </div>
 
         <div>
-          <label htmlFor="peso">Peso:</label>
+          <label htmlFor="peso"></label>
           {/* <label htmlFor="peso">Peso:</label> */}
           <input
             type="number"
@@ -73,7 +73,7 @@ const Formulario = () => {
         </div>
 
         <div>
-          <label htmlFor="edad">Edad:</label>
+          <label htmlFor="edad"></label>
           {/* <label htmlFor="edad">Edad:</label> */}
           <input
             type="number"
@@ -88,7 +88,7 @@ const Formulario = () => {
         </div>
 
         <div>
-          <label htmlFor="enfermedad">Enfermedad:</label>
+          <label htmlFor="enfermedad"></label>
           {/* <label htmlFor="enfermedad">Enfermedad:</label> */}
           <select
             id="enfermedad"
@@ -113,7 +113,7 @@ const Formulario = () => {
         <button type="submit">COMENZAR</button>
       </form>
 
-      <textarea>{Respuesta}</textarea>
+      {/* <textarea>{Respuesta}</textarea> */}
     </>
   );
 };
